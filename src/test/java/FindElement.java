@@ -22,19 +22,21 @@ public class FindElement {
     public void testFind(){
      //  WebElement element1 = wd.findElement(By.xpath("//*[text()='פרטי']"));
      //   System.out.println(element1);
-        List<WebElement> elements = wd.findElements(By.cssSelector("li.first>a[title='פרטי']"));
+ //       List<WebElement> elements = wd.findElements(By.cssSelector("li.first>a[title='פרטי']"));
  //       for(WebElement el:elements){
  //           System.out.println(el.getText());
  //       }
-        System.out.println(elements);
-        print();
+ //       System.out.println(elements);
+ //       print();
+        WebElement element = wd.findElement(By.linkText("פרטי"));
+        System.out.println(element.getText());
 
- //    WebElement element = wd.findElement(By.cssSelector("li.first>a[title='פרטי']"));
+        //    WebElement element = wd.findElement(By.cssSelector("li.first>a[title='פרטי']"));
  //       System.out.println(element.getText());
     }
-    public static void print() {
-        System.out.println("פרטי");
-    }
+ //   public static void print() {
+ //       System.out.println("פרטי");
+ //   }
     public void pause(int time){
         try {
             Thread.sleep(time);
