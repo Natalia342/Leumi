@@ -27,9 +27,13 @@ public class FindElement {
  //           System.out.println(el.getText());
  //       }
         System.out.println(elements);
+        print();
 
  //    WebElement element = wd.findElement(By.cssSelector("li.first>a[title='פרטי']"));
  //       System.out.println(element.getText());
+    }
+    public static void print() {
+        System.out.println("פרטי");
     }
     public void pause(int time){
         try {
